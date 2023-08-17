@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lnct site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+            border: 3px solid #063d6e;
+
+        }
+
+        #navbar ul {
+            border: 2px solid black;
+            border-radius: 20px;
+            display: flex;
+
+        }
+
+        #logo {
+
+            padding: auto;
+        }
+
+        #logo img {
+            border: #063d6e solid 2px;
+            border-radius: 40px;
+            width: 10%;
+            height: 100%;
+            margin-top: 3px;
+            margin-left: 3px;
+            padding: 10px;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color:  #063d6e;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+            color: #d1dad9;
+            font-style: inherit;
+
+        }
+
+        #navbar ul li a {
+            color: black;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: red;
+            background-color: azure;
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 392px;
+        }
+
+        #home::before {
+            content: "";
+            background: url('img/lnct\ bg2.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 54%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .h-primary {
+            color: rgb(21, 21, 22);
+            font-size: 2.8rem;
+            padding: 12px;
+        }
+
+        #home h1 {
+            color: darkblue;
+            text-align: center;
+            font-family: math;
+            font-weight: 800;
+            background-color: #d1dad9;
+
+        }
+
+        #home p {
+            color: #063d6e;
+            font-size: 1.3rem;
+            padding: 1;
+            margin: 3px;
+
+        }
+
+        .btn {
+            padding: 4px 15px;
+            margin: 20px;
+            border: solid 2px black;
+            font-size: 1.2rem;
+            color: black;
+            background-color: #063d6e;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            color: rgb(111, 21, 21);
+        }
+
+        #branch {
+            display: flex;
+            margin: 34px;
+        }
+
+        #branch .box {
+            border: 2px solid blue;
+            padding: 1px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: #77b3e8;
+        }
+
+        #branch .box img {
+            height: 300px;
+            display: block;
+            margin: auto;
+        }
+
+        .hsecondary {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .box p {
+            text-align: center;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .hprimary-center {
+            margin: 15px;
+            border: #063d6e 2px solid;
+            border-radius: 20px;
+            color: black;
+            background-color: #063d6e;
+            text-align: center;
+            font-size: 2.4rem;
+        }
+
+        #clients {
+
+            display: inline-block;
+            margin-left: 27px;
+            background-color: #77b3e8;
+            border: 2px solid blue;
+            border-radius: 23px;
+        }
+
+        #clients .class-item {
+
+          
+            margin: 30px;
+        }
+
+        #clients .class-item img {
+            height: 200px;
+            display: block;
+            margin: auto;
+            background-size: contain;
+        }
+        #contact{
+            margin: 12px;
+            position: relative;
+            width: 100%;
+            display: block;
+        }
+        #contact::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url(img/contact\ bg.jpg) no-repeat center center;
+        }
+        #contact img{
+            width: 100%;
+        }
+
+        footer{
+            margin: 2px;
+            background: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/Lnct-logo.jpg" alt="lnct site">
+
+        </div>
+        <ul>
+
+            <li class="item"><a href="a">Home</a></li>
+            <li class="item"><a href="a">About</a></li>
+            <li class="item"><a href="a">Colleges</a></li>
+            <li class="item"><a href="a">Department</a></li>
+            <li class="item"><a href="a">Placement</a></li>
+
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary"> <i>Welcome to Lnct</i> </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi provident et
+            iste quisquam libero ipsam reprehenderit obcaecati. </p>
+        <p>Quo voluptate esse neque et veniam deleniti modi</p>
+        <button class="btn">Admission Now</button>
+    </section>
+    <section class="branches">
+        <h1 class="hprimary-center">Our Top Branches</h1>
+        <div id="branch">
+            <div class="box">
+                <img src="img/cse.jpg" alt="">
+                <h2 class="hsecondary">Best Placements in CSE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At reprehenderit, veritatis iusto, eligendi
+                    possimus provident accusamus ducimus ratione natus facere enim rem quos.</p>
+            </div>
+            <div class="box">
+                <img src="img/cse.jpg" alt="">
+                <h2 class="hsecondary">Best Placements in IT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At reprehenderit, veritatis iusto, eligendi
+                    possimus provident accusamus ducimus ratione natus facere enim rem quos.</p>
+            </div>
+            <div class="box">
+                <img src="img/cse.jpg" alt="">
+                <h2 class="hsecondary">Best Placements in AIML</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At reprehenderit, veritatis iusto, eligendi
+                    possimus provident accusamus ducimus ratione natus facere enim rem quos.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="hprimary-center">Our Top Recuriters</h1>
+        <div id="clients">
+            <div class="class-item ">
+                <img src="img/placement.jpg" alt="recuriters">
+                <h2 class="hsecondary"> 100% PLACEMENTS</h2>
+            </div>
+        </div>
+        <div id="clients">
+            <div class="class-item ">
+                <img src="img/placement.jpg" alt="recuriters">
+                <h2 class="hsecondary"> 100% PLACEMENTS</h2>
+            </div>
+        </div>
+        <div id="clients">
+            <div class="class-item ">
+                <img src="img/placement.jpg" alt="recuriters">
+                <h2 class="hsecondary"> 100% PLACEMENTS</h2>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="hsecondary">Contact Us</h1>
+        <div id="contactbox">
+            <form action="">
+                <div class="formgroup">
+                    <label for="name">Name:</label>
+                </div><input type="text" name="name" id="name" 
+                placeholder="Enter Your Name">
+        
+                </div>
+                <div class="formgroup">
+                    <label for="name">Email:</label>
+                </div><input type="text" name="name" id="name" 
+                placeholder="Enter Your Email id">
+        
+                </div>
+                <div class="formgroup">
+                    <label for="name">Phone No:</label>
+                </div><input type="text" name="name" id="name" 
+                placeholder="Enter Your Phone no">
+        
+                </div>
+                <div class="formgroup">
+                    <label for="name">Address:</label>
+                </div><input type="text" name="name" id="name" 
+                placeholder="Enter Your Address">
+        
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy; lnct.com All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>
